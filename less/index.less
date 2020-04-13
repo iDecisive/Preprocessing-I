@@ -60,9 +60,102 @@ html, body {
 
 /* Non-reset code under this */
 
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,300&display=swap');
 
 // light & bold fonts^
 
+@normalfont: 'Montserrat', sans-serif; //base font
+
+@resumenamecolor: #FBFBFB;
+
+@resumetopiccolor: #445E70;
+
+@resumeinfotextcolor: #2C3D4C;
+
+*{
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	font-family: @normalfont;
+}
+
+#toplinks{
+
+	display:flex;
+	justify-content: center;
+	margin-top: 5%;
+	margin-bottom: 2%;
+
+	nav {
+		display:flex;
+		a {
+		text-decoration: none;
+		color: black;
+		font-size: 2rem;
+		padding-right: 5%;
+		}
+	}
+}
+
+#resume {
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex: 0 0 80%; // need to fix; word doesn't wrap idk why
+	font-size: 1.6rem;
+	flex-wrap: wrap;
+
+	#topdiv {
+
+		//background: url("/images/resume-background.jpg"); // Not working???
+
+		h1 {
+
+			color: @resumenamecolor;
+
+		}
+
+		h3 {
+
+			color: @resumenamecolor;
+
+		}
+
+	}
+
+	#lowerdivs {
+
+		display: flex;
+		flex-direction: row;
 
 
+		#leftdiv {
+			
+			display:flex;
+			flex-direction: column;
+
+		}
+
+		#rightdiv {
+
+			display: flex;
+			flex-direction: column;
+
+		}
+
+
+	}
+
+}
+
+h1 {
+	font-size: 4.8rem;
+}
+
+h3 {
+	font-size: 2.5rem;
+}
