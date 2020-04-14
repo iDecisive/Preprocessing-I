@@ -90,6 +90,9 @@ html {
 	font-family: @normalfont;
 }
 
+body {
+	background-color: rgb(247, 247, 247);
+}
 
 #toplinks{
 
@@ -114,7 +117,7 @@ html {
 	flex-direction: column;
 	.acenter();
 	.jccenter();
-	// need to fix; word doesn't wrap idk why
+	//width: 80%; // need to fix; word doesn't wrap idk why
 	font-size: 1.6rem;
 	flex-wrap: wrap;
 	margin-left: 20%;
@@ -135,10 +138,12 @@ html {
 		padding-bottom: 5%;
 		padding-left: 5%;
 		padding-right: 5%;
+		max-width: 60%;
+		
 
 
 		img {
-			width: 100px;
+			width: 150px;
 			padding-right: 5%;
 		}
 
@@ -156,19 +161,27 @@ html {
 
 	}
 
+	#topdivtext {
+		h1,h3 {
+			text-shadow: 2px 2px 5px black;
+		}
+	}
+
 	#lowerdivs {
 
 		display: flex;
 		flex-direction: row;
-		// margin-left: 20%;
-		// margin-right: 20%;
-		justify-content: space-evenly;
+		margin-left: 20%;
+		margin-right: 20%;
+		//justify-content: center;
+
 
 		#leftdiv {
 
 			display:flex;
 			flex-direction: column;
-			width: 25%;
+			width: 40%;
+			background-color: white;
 
 		}
 
@@ -176,6 +189,8 @@ html {
 
 			display: flex;
 			flex-direction: column;
+			background-color: #E5E5E5;
+			width:60%;
 
 		}
 

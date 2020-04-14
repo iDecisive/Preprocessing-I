@@ -156,6 +156,9 @@ html {
   font-size: 62.5%;
   font-family: 'Montserrat', sans-serif;
 }
+body {
+  background-color: #f7f7f7;
+}
 #toplinks {
   display: flex;
   justify-content: center;
@@ -194,9 +197,10 @@ html {
   padding-bottom: 5%;
   padding-left: 5%;
   padding-right: 5%;
+  max-width: 60%;
 }
 #resume #topdiv img {
-  width: 100px;
+  width: 150px;
   padding-right: 5%;
 }
 #resume #topdiv h1 {
@@ -205,19 +209,27 @@ html {
 #resume #topdiv h3 {
   color: #FBFBFB;
 }
+#resume #topdivtext h1,
+#resume #topdivtext h3 {
+  text-shadow: 2px 2px 5px black;
+}
 #resume #lowerdivs {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 #resume #lowerdivs #leftdiv {
   display: flex;
   flex-direction: column;
-  width: 25%;
+  width: 40%;
+  background-color: white;
 }
 #resume #lowerdivs #rightdiv {
   display: flex;
   flex-direction: column;
+  background-color: #E5E5E5;
+  width: 60%;
 }
 h1 {
   font-size: 4.8rem;
