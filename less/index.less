@@ -1,5 +1,5 @@
 // Is this working?
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -13,8 +13,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -25,7 +25,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -73,6 +73,14 @@ html, body {
 
 @resumeinfotextcolor: #2C3D4C;
 
+.jccenter() {
+	justify-content: center;
+}
+
+.acenter() {
+	align-items: center;
+}
+
 *{
 	box-sizing: border-box;
 }
@@ -82,10 +90,11 @@ html {
 	font-family: @normalfont;
 }
 
+
 #toplinks{
 
 	display:flex;
-	justify-content: center;
+	.jccenter();
 	margin-top: 5%;
 	margin-bottom: 2%;
 
@@ -103,15 +112,35 @@ html {
 #resume {
 	display:flex;
 	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	flex: 0 0 80%; // need to fix; word doesn't wrap idk why
+	.acenter();
+	.jccenter();
+	// need to fix; word doesn't wrap idk why
 	font-size: 1.6rem;
 	flex-wrap: wrap;
+	margin-left: 20%;
+	margin-right: 20%;
+
+	@media (max-width: 500px) {
+		width: 100%;
+	}
 
 	#topdiv {
 
-		//background: url("/images/resume-background.jpg"); // Not working???
+		display: flex;
+
+		background: url("https://images.pexels.com/photos/270373/pexels-photo-270373.jpeg?cs=srgb&dl=code-coding-computer-cyberspace-270373.jpg&fm=jpg"); // Not working with local???
+
+		background-size: 1000px;
+		padding-top: 5%;
+		padding-bottom: 5%;
+		padding-left: 5%;
+		padding-right: 5%;
+
+
+		img {
+			width: 100px;
+			padding-right: 5%;
+		}
 
 		h1 {
 
@@ -131,12 +160,15 @@ html {
 
 		display: flex;
 		flex-direction: row;
-
+		// margin-left: 20%;
+		// margin-right: 20%;
+		justify-content: space-evenly;
 
 		#leftdiv {
-			
+
 			display:flex;
 			flex-direction: column;
+			width: 25%;
 
 		}
 
@@ -159,3 +191,4 @@ h1 {
 h3 {
 	font-size: 2.5rem;
 }
+

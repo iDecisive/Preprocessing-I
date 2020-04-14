@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -176,9 +176,28 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex: 0 0 80%;
   font-size: 1.6rem;
   flex-wrap: wrap;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+@media (max-width: 500px) {
+  #resume {
+    width: 100%;
+  }
+}
+#resume #topdiv {
+  display: flex;
+  background: url("https://images.pexels.com/photos/270373/pexels-photo-270373.jpeg?cs=srgb&dl=code-coding-computer-cyberspace-270373.jpg&fm=jpg");
+  background-size: 1000px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+#resume #topdiv img {
+  width: 100px;
+  padding-right: 5%;
 }
 #resume #topdiv h1 {
   color: #FBFBFB;
@@ -189,10 +208,12 @@ html {
 #resume #lowerdivs {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
 }
 #resume #lowerdivs #leftdiv {
   display: flex;
   flex-direction: column;
+  width: 25%;
 }
 #resume #lowerdivs #rightdiv {
   display: flex;
